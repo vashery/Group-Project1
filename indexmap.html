@@ -36,7 +36,7 @@
           <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
+          <a class="nav-link" href="#">About Us</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
@@ -81,7 +81,7 @@
     var testmarker = L.marker([40.715279, -124.201393]).addTo(mymap)
 
 
-    L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=', {
+    L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoidmFzaGVyeSIsImEiOiJjanA4eGFlcHEwMTk5M3ZtOGd1cDNvNGtpIn0.NTgjq3RtaFskoyWeOEB10A', {
       attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
       maxZoom: 18,
       id: 'mapbox.streets',
@@ -103,7 +103,7 @@
 
 
 
-    var apiurl = "http://www.airnowapi.org/aq/data/?startDate=2018-12-03T23&endDate=2018-12-04T00&parameters=OZONE,PM25,PM10,CO,NO2,SO2&BBOX=-124.205070,28.716781,-75.337882,45.419415&dataType=A&format=application/json&verbose=0&API_KEY="
+    var apiurl = "http://www.airnowapi.org/aq/data/?startDate=2018-12-03T23&endDate=2018-12-04T00&parameters=OZONE,PM25,PM10,CO,NO2,SO2&BBOX=-124.205070,28.716781,-75.337882,45.419415&dataType=A&format=application/json&verbose=0&API_KEY=GUEST"
 
     // function displayresults() {
 
@@ -130,7 +130,7 @@
     var settings = {
       "async": true,
       "crossDomain": true,
-      "url": "https://www.airnowapi.org/aq/data/?startDate=2018-12-03T23&endDate=2018-12-04T00&parameters=OZONE,PM25,PM10,CO,NO2,SO2&BBOX=-124.205070,28.716781,-75.337882,45.419415&dataType=A&format=application/json&verbose=0&API_KEY=",
+      "url": "https://www.airnowapi.org/aq/data/?startDate=2018-12-03T23&endDate=2018-12-04T00&parameters=OZONE,PM25,PM10,CO,NO2,SO2&BBOX=-124.205070,28.716781,-75.337882,45.419415&dataType=A&format=application/json&verbose=0&API_KEY=GUEST",
       "method": "GET",
       "headers": {
         "Access-Control-Allow-Origin": "https://www.airnowapi.org"
